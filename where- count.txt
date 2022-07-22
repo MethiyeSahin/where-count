@@ -1,0 +1,8 @@
+--COUNT
+select count (*) from Products //toplam satır sayar
+select COUNT (distinct quantityperunit) from Products //quantityperunit in tekrar etmediği satır sayısı
+select * from Products where  CategoryID=1  //CategoryID=1 olanları getir
+
+--WHERE - BETWEEN
+select * from Products where UnitPrice>=10 and UnitPrice<=25 order by UnitPrice   //UnitPrice>=10 and UnitPrice<=25 değerleri getir unitprice a göre sırala
+select * from Products where UnitPrice between 10 and 25 order by UnitPrice desc  //products tablosundan unitprice ın 10 
